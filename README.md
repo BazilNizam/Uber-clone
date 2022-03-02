@@ -8,11 +8,11 @@
 - [x] Taiwind Css
 - [x] Firebase
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png" alt="Uber logo" style="height: 150px; width:200px;"/><br />
+<img src="https://anuragbhandari.com/wp-content/uploads/2020/02/nextjs.png" alt="Uber logo" style=" object-fit: cover ; height: 150px; width:220px;"/><br />
 
 <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.png" alt="Tailwind logo" style="height: 120px; width:200px;"/><br />
 
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" alt="Uber logo" style="height: 120px; width:300px;"/>
+<img src="https://firebase.google.com/images/social.png" alt="Uber logo"  style=" object-fit: cover height: 180px; width:320px;"/>
 <br />
 <br />
 <br />
