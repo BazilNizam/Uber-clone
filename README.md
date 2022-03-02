@@ -5,8 +5,6 @@
 > ## **A fully functional uber clone** 
 
 <br/>
-<br/>
-<br/>
 
 ### **Created using**
 
