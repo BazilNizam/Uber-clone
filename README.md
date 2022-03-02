@@ -1,6 +1,6 @@
 # Uber Clone
 
-<img src="https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg" alt="Uber logo" style="height: 100px; width:300px;"/>
+<img src="https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg" alt="Uber logo" />
 
 ### **Created using**
 
