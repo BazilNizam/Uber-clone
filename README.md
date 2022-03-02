@@ -8,7 +8,7 @@
 - [x] Taiwind Css
 - [x] Firebase
 
-<img src="https://anuragbhandari.com/wp-content/uploads/2020/02/nextjs.png" alt="Uber logo" style=" object-fit: cover ; height:100px; width:300px;"/><br />
+<img src="https://anuragbhandari.com/wp-content/uploads/2020/02/nextjs.png" alt="Uber logo" style=" object-fit: cover ; height:200px; width:400px;"/><br />
 
 <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.png" alt="Tailwind logo" style="height: 120px; width:200px;"/><br />
 
