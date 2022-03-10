@@ -25,7 +25,7 @@ export default function Home() {
         }
     })
     
-  }, [])
+  }, )
   
 
   return (
@@ -46,7 +46,7 @@ export default function Home() {
 
         <ActionButtons>
           {/* car button */}
-          <Link href="/Search">
+          <Link href="/Search" passHref>
             <ActionButton>
               <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png" />{" "}
               Ride
