@@ -2,7 +2,7 @@
 
 <img src="https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg" alt="Uber logo" style="height: 250px; width:400px;"/>
 
-> ## **A fully functional uber clone**
+# This app is designed to for mobile screen size!!
 
 <br/>
 
