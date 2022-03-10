@@ -1,44 +1,62 @@
 import Link from "next/link";
+import { useState } from "react";
 import tw from "tailwind-styled-components/dist/tailwind";
 
 const Search = () => {
+  const [pickup, setPickup] = useState("");
+  const [dropoff, setDropoff] = useState("");
+
   return (
     <Wrapper>
       {/* Button Container */}
-      <Link href="/index"> 
       <ButtonContainer>
-        <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
+        <Link href="/">
+          <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
+        </Link>
       </ButtonContainer>
-      </Link>
-     
+
       {/* Input Container */}
 
       <InputContainer>
         <FromToIcons>
           <Circle src="https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png" />
           <Line src="https://img.icons8.com/ios/50/9CA3AF/vertical-line.png" />
-          <Square src="https://img.icons8.com/windows/50/000000/square-full.png"/>
+          <Square src="https://img.icons8.com/windows/50/000000/square-full.png" />
         </FromToIcons>
 
         <InputBoxes>
-          <Input placeholder="Enter pickup location" />
-          <Input placeholder="Where to?" />
-        
+          <Input
+            placeholder="Enter pickup location"
+            value={pickup}
+            onChange={(e) => setPickup(e.target.value)}
+          />
+          <Input
+            placeholder="Where to?"
+            value={dropoff}
+            onChange={(e) => setDropoff(e.target.value)}
+          />
         </InputBoxes>
-        <PlusIcons src="https://img.icons8.com/ios/50/000000/plus-math.png"/>
+        <PlusIcons src="https://img.icons8.com/ios/50/000000/plus-math.png" />
       </InputContainer>
       {/* Saved palces button */}
 
       <SavedPlaces>
-        <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png"/>
+        <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />
         Saved Places
       </SavedPlaces>
 
       {/* Confirm location*/}
-
-      <ConfirmLocationsButton>
-            Confirm Locations
-      </ConfirmLocationsButton>
+      <Link
+        href={{
+          pathname: "/Confirm",
+          query: {
+            pickup: pickup,
+            dropoff: dropoff,
+          },
+        }} 
+      passHref>
+        <ConfirmLocationsButton>Confirm Locations</ConfirmLocationsButton>
+      </Link>
     </Wrapper>
   );
 };
@@ -62,7 +80,7 @@ const ButtonContainer = tw.div`
 `;
 
 const BackButton = tw.img`
-   
+   cursor-pointer
    h-9
    border border-gray-300
    rounded-full
@@ -172,20 +190,17 @@ const StarIcon = tw.img`
   transform hover:scale-110 transition
 `;
 
-
 const ConfirmLocationsButton = tw.div`
 
-  m-7
   bg-black
-  text-xl
   text-white
-  p-2
-  flex
-  item-center
-  justify-center
-  transform hover:scale-95 transition
+  text-center
+  mt-3
+  mx-4
+  py-2
   rounded-md
-
-
+  text-2xl
+  cursor-pointer
+  transform hover:scale-95 transition
 
 `;

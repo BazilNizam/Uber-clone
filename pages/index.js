@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 import Map from "./components/Map";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,10 +13,9 @@ export default function Home() {
           <UberLogo src="https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg" />
           <Profile>
             <Name>Bazil Nizam</Name>
-            <UserImage src="https://scontent.fccj2-2.fna.fbcdn.net/v/t39.30808-6/249055022_4492203834227792_2286278363643587005_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=4Mo9HIHBBfIAX8Gk5lV&_nc_ht=scontent.fccj2-2.fna&oh=00_AT9HIFMaFMur6UFqKcgecwUnr0wLSwXPt3cP0oOM8PLL0A&oe=6224695A" />
+            <UserImage src="https://scontent.fccj2-2.fna.fbcdn.net/v/t39.30808-6/249055022_4492203834227792_2286278363643587005_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=SXADxHyZ2BYAX9RIc3f&_nc_ht=scontent.fccj2-2.fna&oh=00_AT-twLSnq57eR8PzgqRRooLQPrL5buulwncJTtO-WDuG1g&oe=622A581A" />
           </Profile>
         </Header>
-
 
         {/* Action Buttons */}
 
@@ -24,27 +23,27 @@ export default function Home() {
           {/* car button */}
           <Link href="/Search">
             <ActionButton>
-              <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png" /> Ride
+              <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png" />{" "}
+              Ride
             </ActionButton>
           </Link>
 
           <ActionButton>
-            <ActionButtonImage src="https://i.ibb.co/n776JLm/bike.png" />2-Wheels
+            <ActionButtonImage src="https://i.ibb.co/n776JLm/bike.png" />
+            2-Wheels
           </ActionButton>
           <ActionButton>
-            <ActionButtonImage src="https://i.ibb.co/5RjchBg/uberschedule.png" />Reserve
+            <ActionButtonImage src="https://i.ibb.co/5RjchBg/uberschedule.png" />
+            Reserve
           </ActionButton>
         </ActionButtons>
 
         {/* Input Buttons */}
-        <InputButton>
-          Where to?
-        </InputButton>
+        <InputButton>Where to?</InputButton>
       </ActionItems>
     </Wrapper>
   );
 }
-
 
 //STYLES
 
@@ -95,7 +94,6 @@ const ActionButtons = tw.div`
   flex
 
 `;
-
 
 const ActionButton = tw.div`
   flex
